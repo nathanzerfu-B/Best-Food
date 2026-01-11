@@ -1,29 +1,121 @@
-body{
+body {
     background-color: white;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
-nav{
+
+/* --- Hero Section & Background --- */
+.Home {
+    background-image: url('img/wave-haikei.png');
+    /* Use 'cover' so it fills the area, not '18px' */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Ensure the section takes up at least the full screen height */
+    min-height: 100vh;
+}
+
+/* --- Navigation Bar --- */
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-        padding: 10px 30px;
+    padding: 20px 50px;
+    background-color: 0f2d11;
+    /* Slight white background for readability */
 }
+
+/* Grouping logo and text */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo-img {
+    height: 40px;
+    /* Limit image size */
+    width: auto;
+}
+
 nav a.logo {
     text-decoration: none;
     color: rgba(0, 175, 96, 0.783);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
-a.img{
-    
+a.logo span{
+    color:chocolate;
 }
-nav li a{
+
+/* --- Navigation Links --- */
+nav ul {
+    display: flex;
+    /* Makes the list horizontal */
+    list-style: none;
+    /* Removes bullet points */
+    gap: 25px;
+    /* Space between links */
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
     text-decoration: none;
+    color: #f6efef;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
-h1{
+
+nav li a:hover {
+    color:chocolate;
+    text-decoration: underline;
+}
+
+/* --- Search Bar & Icon --- */
+.search-btn {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.search-btn input {
+    padding: 5px 5px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Control SVG size */
+.search-icon {
+    width: 30px;
+    height: 30px;
+    fill: #333;
+    cursor: pointer;
+}
+.order-btn{
+    border-radius: 30px;
+    background-color: chocolate;
+    color: white;
+    padding: 5px 25px;
+}
+
+/* --- Hero Text --- */
+.hero-content {
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+h1 {
     font-weight: bold;
-        text-align: center;
-        margin-top: 40px;
-    }
+    text-align: center;
+    color: #f1eeee;
+    min-width: 500px;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+p{
+    color: white;
+}
