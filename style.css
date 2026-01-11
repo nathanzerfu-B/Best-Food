@@ -7,12 +7,12 @@ body {
 
 /* --- Hero Section & Background --- */
 .Home {
+    /* Fallback color if image doesn't load */
+    background-color: #0f2d11;
     background-image: url('img/wave-haikei.png');
-    /* Use 'cover' so it fills the area, not '18px' */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* Ensure the section takes up at least the full screen height */
     min-height: 100vh;
 }
 
@@ -22,8 +22,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 20px 50px;
-    background-color: 0f2d11;
-    /* Slight white background for readability */
+    /* FIXED: Added the # symbol */
+    background-color: #0f2d11;
 }
 
 /* Grouping logo and text */
@@ -35,7 +35,6 @@ nav {
 
 .nav-logo-img {
     height: 40px;
-    /* Limit image size */
     width: auto;
 }
 
@@ -45,18 +44,16 @@ nav a.logo {
     font-weight: bold;
     font-size: 1.5rem;
 }
-a.logo span{
-    color:chocolate;
+
+a.logo span {
+    color: chocolate;
 }
 
 /* --- Navigation Links --- */
 nav ul {
     display: flex;
-    /* Makes the list horizontal */
     list-style: none;
-    /* Removes bullet points */
     gap: 25px;
-    /* Space between links */
     margin: 0;
     padding: 0;
 }
@@ -69,7 +66,7 @@ nav li a {
 }
 
 nav li a:hover {
-    color:chocolate;
+    color: chocolate;
     text-decoration: underline;
 }
 
@@ -77,45 +74,109 @@ nav li a:hover {
 .search-btn {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 15px;
 }
 
 .search-btn input {
-    padding: 5px 5px;
-    border-radius: 15px;
-    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
     outline: none;
 }
 
-/* Control SVG size */
 .search-icon {
-    width: 30px;
-    height: 30px;
-    fill: #333;
+    width: 25px;
+    height: 25px;
+    fill: white;
+    /* Changed to white to be visible on dark nav */
     cursor: pointer;
 }
-.order-btn{
+
+/* Nav Button Style */
+.order-btn {
     border-radius: 30px;
     background-color: chocolate;
     color: white;
-    padding: 5px 25px;
+    padding: 8px 25px;
+    cursor: pointer;
+    border: none;
+    /* Removed default border */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
 }
 
-/* --- Hero Text --- */
-.hero-content {
-    justify-content: center;
-    margin-top: 100px;
+.order-btn:hover {
+    background-color: #be5918;
+}
 
+.order-btn img {
+    width: 18px;
+    height: auto;
+}
+
+/* --- Hero Content Styling --- */
+.hero-content {
+    /* Flexbox to center everything vertically and horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 20px;
 }
 
 h1 {
     font-weight: bold;
-    text-align: center;
     color: #f1eeee;
-    min-width: 500px;
-    font-size: 3rem;
-    line-height: 1.2;
+    max-width: 800px;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
-p{
+
+p {
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    /* Prevents text from being too wide */
+    margin-bottom: 40px;
+}
+
+/* --- Second Order Section --- */
+.second-order {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between button and icon */
+}
+
+.second-order .order-btn-1 {
+    border-radius: 30px;
+    background-color: chocolate;
     color: white;
+    padding: 15px 40px;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.second-order .order-btn-1:hover {
+    transform: scale(1.05);
+    /* Slight pop effect on hover */
+    background-color: #be5918;
+}
+
+.second-order img {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.second-order img:hover {
+    transform: rotate(45deg);
 }

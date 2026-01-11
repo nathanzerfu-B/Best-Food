@@ -1,12 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Best-Food" content="Best food is a fast food that serves delicious vegan meals">
     <title>Best Food</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Hero Section & Background --- */
+        .Home {
+            /* Fallback color if image doesn't load */
+            background-color: #0f2d11; 
+            background-image: url('img/wave-haikei.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        /* --- Navigation Bar --- */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 50px;
+            /* FIXED: Added the # symbol */
+            background-color: #0f2d11; 
+        }
+
+        /* Grouping logo and text */
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-logo-img {
+            height: 40px;
+            width: auto;
+        }
+
+        nav a.logo {
+            text-decoration: none;
+            color: rgba(0, 175, 96, 0.783);
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        a.logo span {
+            color: chocolate;
+        }
+
+        /* --- Navigation Links --- */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: #f6efef;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav li a:hover {
+            color: chocolate;
+            text-decoration: underline;
+        }
+
+        /* --- Search Bar & Icon --- */
+        .search-btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-btn input {
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+        .search-icon {
+            width: 25px;
+            height: 25px;
+            fill: white; /* Changed to white to be visible on dark nav */
+            cursor: pointer;
+        }
+
+        /* Nav Button Style */
+        .order-btn {
+            border-radius: 30px;
+            background-color: chocolate;
+            color: white;
+            padding: 8px 25px;
+            cursor: pointer;
+            border: none; /* Removed default border */
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .order-btn:hover {
+            background-color: #be5918;
+        }
+
+        .order-btn img {
+            width: 18px;
+            height: auto;
+        }
+
+        /* --- Hero Content Styling --- */
+        .hero-content {
+            /* Flexbox to center everything vertically and horizontally */
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+            text-align: center;
+            margin-top: 100px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-weight: bold;
+            color: #f1eeee;
+            max-width: 800px;
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #d1d1d1;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 600px; /* Prevents text from being too wide */
+            margin-bottom: 40px;
+        }
+
+        /* --- Second Order Section --- */
+        .second-order {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Space between button and icon */
+        }
+
+        .second-order .order-btn-1 {
+            border-radius: 30px;
+            background-color: chocolate;
+            color: white;
+            padding: 15px 40px;
+            cursor: pointer;
+            border: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .second-order .order-btn-1:hover {
+            transform: scale(1.05); /* Slight pop effect on hover */
+            background-color: #be5918;
+        }
+
+        .second-order img {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .second-order img:hover {
+            transform: rotate(45deg);
+        }
+    </style>
 </head>
 
 <body>
@@ -29,25 +206,30 @@
                 </ul>
 
                 <div class="search-btn">
-                    <input type="text" name="search-bar" placeholder="Search">
+                    <input type="text" name="search-bar" placeholder="Search...">
+                    
                     <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                        <path
-                            d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z" />
+                        <path d="M320 64C326.6 64 332.9 66.7 337.4 71.5L481.4 223.5L481.9 224L560 224C577.7 224 592 238.3 592 256C592 270.5 582.4 282.7 569.2 286.7L523.1 493.9C516.6 523.2 490.6 544 460.6 544L179.3 544C149.3 544 123.3 523.2 116.8 493.9L70.8 286.7C57.6 282.8 48 270.5 48 256C48 238.3 62.3 224 80 224L158.1 224L158.6 223.5L302.6 71.5C307.1 66.7 313.4 64 320 64zM320 122.9L224.2 224L415.8 224L320 122.9zM240 328C240 314.7 229.3 304 216 304C202.7 304 192 314.7 192 328L192 440C192 453.3 202.7 464 216 464C229.3 464 240 453.3 240 440L240 328zM320 304C306.7 304 296 314.7 296 328L296 440C296 453.3 306.7 464 320 464C333.3 464 344 453.3 344 440L344 328C344 314.7 333.3 304 320 304zM448 328C448 314.7 437.3 304 424 304C410.7 304 400 314.7 400 328L400 440C400 453.3 410.7 464 424 464C437.3 464 448 453.3 448 440L448 328z" />
                     </svg>
-                    <button class="order-btn">Order Now</button>
+
+                    <button class="order-btn">
+                        Order Now 
+                        <img src="https://img.icons8.com/windows/32/FFFFFF/right.png" alt="right" />
+                    </button>
                 </div>
             </nav>
         </header>
 
         <div class="hero-content">
             <h1>Experience Adventure in Every Dish We Serve</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                 Vel vero expedita quae itaque ut reiciendis laboriosam voluptas,
-                  quia quo, a, temporibus in iste. Beatae itaque nostrum error 
-                  omnis sunt sint.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel vero expedita quae itaque ut reiciendis laboriosam voluptas, quia quo, a, temporibus in iste. Beatae itaque nostrum error omnis sunt sint.</p>
+            
+            <div class="second-order"> 
+                <button class="order-btn-1">Order Now</button>
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/FFFFFF/circled-up-right-2.png" alt="view menu" />
+            </div>
         </div>
     </div>
 
 </body>
-
 </html>
