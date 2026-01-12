@@ -116,7 +116,20 @@ nav li a:hover {
     width: 18px;
     height: auto;
 }
-
+.video-btn {
+    border: none;
+    margin-left: 20px;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.video-btn p {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: center;
+}
+.
 /* --- Hero Content Styling --- */
 .hero-content {
     /* Flexbox to center everything vertically and horizontally */
