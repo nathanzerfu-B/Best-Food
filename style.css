@@ -97,7 +97,7 @@ nav li a:hover {
     border-radius: 30px;
     background-color: chocolate;
     color: white;
-    padding: 8px 25px;
+    padding: 8px 20px;
     cursor: pointer;
     border: none;
     /* Removed default border */
@@ -105,6 +105,16 @@ nav li a:hover {
     align-items: center;
     gap: 10px;
     font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+.second-order .order-btn-1 {
+    border-radius: 30px;
+    background-color: rgb(250, 136, 55);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
     transition: background-color 0.3s;
 }
 
