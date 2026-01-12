@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 130vh;
 }
 
 /* --- Navigation Bar --- */
@@ -116,20 +116,7 @@ nav li a:hover {
     width: 18px;
     height: auto;
 }
-.video-btn {
-    border: none;
-    margin-left: 20px;
-    background: none;
-    cursor: pointer;
-    padding: 0;
-}
-.video-btn p {
-    color: #ffffff;
-    font-size: 0.9rem;
-    margin-top: 5px;
-    text-align: center;
-}
-.
+
 /* --- Hero Content Styling --- */
 .hero-content {
     /* Flexbox to center everything vertically and horizontally */
@@ -138,11 +125,12 @@ nav li a:hover {
     align-items: center;
     text-align: center;
     margin-top: 10px;
-    padding: 0 20px;
+    padding: 0 50px;
 }
 
 h1 {
-    font-weight: bold;
+    font-family: 'Syne', sans-serif;
+    font-weight:700;
     color: #f1eeee;
     max-width: 800px;
     font-size: 3.5rem;
@@ -151,19 +139,22 @@ h1 {
 }
 
 p {
+    font-family: 'Syne', sans-serif;
     color: #d1d1d1;
     font-size: 1.1rem;
     line-height: 1.6;
-    text-align: left;
+    align-self:flex-start;
     /* Prevents text from being too wide */
     margin-bottom: 40px;
+    max-width: 600px;
 }
 
 /* --- Second Order Section --- */
 .second-order {
+    align-self: flex-start;
     display: flex;
-    align-items:flex-start;
-    gap: 20px;
+    align-items:start;
+    gap: 10px;
     /* Space between button and icon */
 }
 
@@ -192,4 +183,17 @@ p {
 
 .second-order img:hover {
     transform: rotate(45deg);
+}
+.video-btn {
+    border: none;
+    margin-left: 20px;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+.video-btn p {
+    color: #f1eeee;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    text-align: center;
 }
