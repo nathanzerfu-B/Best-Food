@@ -194,6 +194,11 @@ p {
 .second-order img:hover {
     transform: rotate(45deg);
 }
+.second-order .plate{
+    width: 260px;
+    height: auto;
+
+}
 .video-btn {
     border: none;
     margin-left: 20px;
