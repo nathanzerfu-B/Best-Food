@@ -13,7 +13,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 130vh;
+    min-height: 135vh;
 }
 
 /* --- Navigation Bar --- */
@@ -197,6 +197,14 @@ p {
 .second-order .plate{
     width: 260px;
     height: auto;
+    margin-left: 270px;
+
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+
+
+
 
 }
 .video-btn {
