@@ -243,15 +243,10 @@ nav li a:hover {
    ========================================= */
 
 .hero-content {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     padding: 40px 80px;
-
     margin-top: 20px;
 
 }
@@ -261,17 +256,11 @@ nav li a:hover {
 h1 {
 
     font-family: 'Syne', sans-serif;
-
     font-weight: 700;
-
     color: #f1eeee;
-
     font-size: 3.5rem;
-
     text-align: center;
-
     margin-bottom: 20px;
-
     max-width: 900px;
 
 }
@@ -279,21 +268,13 @@ h1 {
 
 
 .hero-description {
-
     font-family: 'Syne', sans-serif;
-
     color: #d1d1d1;
-
     font-size: 1.1rem;
-
     line-height: 1.6;
-
     margin-bottom: 40px;
-
     max-width: 650px;
-
     align-self: flex-start;
-
     text-align: left;
 
 }
@@ -422,44 +403,34 @@ h1 {
 
 
 .video-text {
-
     margin: 0 !important;
-
     font-size: 0.8rem !important;
-
     color: #f1eeee !important;
-
     text-align: center !important;
-
     align-self: center !important;
-
 }
-
 /* =========================================
-
    5. MEALS SECTION
-
    ========================================= */
-
 .meals-section {
-display: flex;
-    align-items: center;
-        justify-content: center;
-    padding: 60px 50px;
-    margin-top: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 60px 50px;
+   margin-top: 50px;
 }
 
 .meals-list  {
     overflow-x: auto;
     height: auto;
     gap: 20px;
-        padding: 10px;
+    padding: 10px;
     transition: transform 0.3s;
 
-}.meals-list img {
+}
+.meals-list img {
     width: 120px;
     height: 120px;
-    object-fit: cover;
     border-radius: 15px;
     transition: transform 0.3s;
 }
