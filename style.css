@@ -1,165 +1,318 @@
 /* =========================================
-   1. GLOBAL STYLES 
+
+   1. GLOBAL STYLES
+
    ========================================= */
+
 body {
+
     background-color: white;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
+
     margin: 0;
+
     padding: 0;
+
 }
 
+
+
 /* =========================================
-   2. MAIN LAYOUT & BACKGROUND 
+
+   2. MAIN LAYOUT & BACKGROUND
+
    ========================================= */
+
 .Home {
+
     background-color: #0f2d11;
+
     /* Fallback color */
+
     background-image: url('img/wave-haikei.png');
+
     background-size: cover;
+
     background-position: center;
+
     background-repeat: no-repeat;
-    min-height: 155vh;
+
+    min-height: 100vh;
+
 }
 
+
+
 /* =========================================
-   3. NAVIGATION BAR 
+
+   3. NAVIGATION BAR
+
    ========================================= */
+
 nav {
+
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
+
     padding: 20px 50px;
+
     background-color: #0f2d11;
+
 }
+
+
 
 /* Brand & Logo */
+
 .brand {
+
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
 }
+
+
 
 .nav-logo-img {
+
     height: 40px;
+
     width: auto;
+
 }
+
+
 
 nav a.logo {
+
     text-decoration: none;
+
     color: rgba(0, 175, 96, 0.783);
+
     font-weight: bold;
+
     font-size: 1.5rem;
+
 }
+
+
 
 a.logo span {
+
     color: chocolate;
+
 }
+
+
 
 /* Nav Links List */
+
 nav ul {
+
     display: flex;
+
     list-style: none;
+
     gap: 25px;
+
     margin: 0;
+
     padding: 0;
+
 }
+
+
 
 nav li a {
+
     text-decoration: none;
+
     color: #f6efef;
+
     font-size: 1rem;
+
     transition: color 0.3s;
+
 }
+
+
 
 nav li a:hover {
+
     color: chocolate;
+
     text-decoration: underline;
+
 }
+
+
 
 /* Search Bar & Nav Utility */
+
 .search-btn {
+
     display: flex;
+
     align-items: right;
+
     gap: 5px;
+
 }
+
+
 
 .search-btn input {
-    border-radius: 20px;
-    padding: 5px 15px;
+
+    border-radius: 30px;
+
+    padding: 5px 10px;
+
     border: none;
+
     outline: none;
+
 }
 
+
+
 .search-icon {
+
     width: 40px;
+
     height: auto;
 
     fill: white;
+
     cursor: pointer;
+
 }
+
+
 
 .order-btn {
+
     border-radius: 30px;
+
     background-color: chocolate;
+
     color: white;
+
     padding: 8px 10px;
+
     cursor: pointer;
+
     border: none;
+
     display: flex;
+
     align-items: center;
+
     gap: 10px;
+
     font-size: 0.9rem;
+
     transition: background-color 0.3s;
+
 }
+
+
 
 .order-btn:hover {
+
     background-color: #be5918;
+
     transform: scale(1.05);
-        background-color: #be5918;
+
+    background-color: #be5918;
+
 }
+
+
 
 /* =========================================
-   4. HERO SECTION CONTENT 
+
+   4. HERO SECTION CONTENT
+
    ========================================= */
+
 .hero-content {
+
     display: flex;
+
     flex-direction: column;
+
     align-items: center;
+
     padding: 40px 80px;
+
     margin-top: 20px;
+
 }
+
+
 
 h1 {
+
     font-family: 'Syne', sans-serif;
+
     font-weight: 700;
+
     color: #f1eeee;
+
     font-size: 3.5rem;
+
     text-align: center;
+
     margin-bottom: 20px;
+
     max-width: 900px;
+
 }
+
+
 
 .hero-description {
+
     font-family: 'Syne', sans-serif;
+
     color: #d1d1d1;
+
     font-size: 1.1rem;
+
     line-height: 1.6;
+
     margin-bottom: 40px;
+
     max-width: 650px;
+
     align-self: flex-start;
+
     text-align: left;
+
 }
 
+
+
 /* Action Area Row (Plate + Buttons) */
+
 .action-area {
     display: flex;
     flex-direction: row;
     align-items: center;
+   justify-content: flex-start;
     gap: 40px;
     width: 100%;
 }
 
 .plate {
+
     width: 400px;
     height: auto;
     border-radius: 50%;
@@ -168,59 +321,155 @@ h1 {
     margin-left: 250px;
 }
 
+
+
 /* --- Buttons & Video Controls --- */
+
 .second-order {
+
     display: flex;
+
     align-items: center;
+
     gap: 20px;
+
 }
+
+
 
 .second-order .order-btn-1 {
+
     border-radius: 30px;
+
     background-color: chocolate;
+
     color: white;
+
     padding: 15px 40px;
+
     cursor: pointer;
+
     border: none;
+
     font-size: 1.1rem;
+
     font-weight: bold;
+
     transition: transform 0.2s, background-color 0.3s;
+
 }
+
+
 
 .second-order .order-btn-1:hover {
+
     transform: scale(1.05);
+
     background-color: #be5918;
+
 }
 
+
+
 /* Decorative Icons */
+
 .second-order img {
+
     cursor: pointer;
+
+    transition: transform 0.3s;
+
+}
+
+
+
+.second-order img:hover {
+
+    transform: rotate(45deg);
+
+}
+
+
+
+/* Video Group Styling */
+
+.video-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin-left: 10px;
+
+}
+
+
+
+.video-btn {
+
+    border: none;
+
+    background: none;
+
+    cursor: pointer;
+
+    padding: 0;
+
+}
+
+
+
+.video-text {
+
+    margin: 0 !important;
+
+    font-size: 0.8rem !important;
+
+    color: #f1eeee !important;
+
+    text-align: center !important;
+
+    align-self: center !important;
+
+}
+
+/* =========================================
+
+   5. MEALS SECTION
+
+   ========================================= */
+
+.meals-section {
+display: flex;
+    align-items: center;
+        justify-content: center;
+    padding: 60px 50px;
+    margin-top: 50px;
+}
+
+.meals-list  {
+    overflow-x: auto;
+    height: auto;
+    gap: 20px;
+        padding: 10px;
+    transition: transform 0.3s;
+
+}.meals-list img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
     transition: transform 0.3s;
 }
 
-.second-order img:hover {
-    transform: rotate(45deg);
+.meals-list img:hover {
+    transform: translateY(-10px);
 }
 
-/* Video Group Styling */
-.video-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 10px;
-}
-
-.video-btn {
-    border: none;
-    background: none;
+.nav-arrow {
+    width: 50px;
     cursor: pointer;
-    padding: 0;
-}
-
-.video-text {
-    margin: 0 !important;
-    font-size: 0.8rem !important;
-    color: #f1eeee !important;
-    text-align: center !important;
-    align-self: center !important;
+    transition: opacity 0.3s;
 }
