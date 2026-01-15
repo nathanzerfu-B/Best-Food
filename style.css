@@ -30,15 +30,15 @@ body {
 
     /* Fallback color */
 
-    background-image: url('img/wave-haikei.png');
+    background-image: url('img/wave-haik.png');
 
     background-size: cover;
 
     background-position: center;
 
     background-repeat: no-repeat;
+    height:160vh;
 
-    min-height: 100vh;
 
 }
 
@@ -257,12 +257,13 @@ h1 {
 }
 
 .plate {
-    width: 400px;
+    width: 500px;
     height: auto;
     border-radius: 50%;
     border: none;
     outline: none;
     margin-left: 250px;
+    margin-top: -30px;
 }
 
 
@@ -345,8 +346,8 @@ h1 {
    align-items: center;
    justify-content: center;
    padding: 60px 50px;
-margin-top: 240vh;
-    background-color:white;
+margin-top: -31vh;
+    background-color:#F2F7FB;
     gap: 30px;
 }
 
@@ -386,7 +387,7 @@ margin-top: 240vh;
     align-items: center;
     justify-content: space-between;
     padding: 80px 100px;
-    background-color: white;
+    background-color:#F2F7FB;
     /* Contrast from dark hero */
     gap: 50px;
     margin-top: 0;
