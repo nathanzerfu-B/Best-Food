@@ -407,26 +407,26 @@ h1 {
 
 /* The Background Image (Chef cooking) */
 .img-back {
-    width: 380px;
-    height: 500px;
-    object-fit: cover;
-    border-radius: 30px;
+    width: 360px;
+    height: 460px;
+    border-radius: 20px;
     z-index: 1;
 }
 
 /* The Overlapping Image (Hands cutting) */
 .img-front {
-    width: 320px;
-    height: 380px;
+    width: 290px;
+    height: 364px;
     object-fit: cover;
     border-radius: 30px;
     /* These properties pull it on top of the other image */
     position: absolute;
     left: 0;
+    right: 30px;
     /* Moves it to the left side of the container */
-    top: 120px;
+    top: 88px;
         /* Adjusts how high/low it sits */
-    z-index: 2;
+    z-index: 3;
     /* Ensures it is on top */
     border: 5px solid white;
     /* Adds depth */
@@ -435,7 +435,7 @@ h1 {
 .menu-content h2 {
     font-family: 'Syne', sans-serif;
     color: #0f2d11;
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.1;
     margin-bottom: 20px;
 }
