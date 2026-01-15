@@ -415,6 +415,7 @@ h1 {
     transition: background-color 0.3s;
 
 }
+
 .menu-section .order-btn:hover {
     background-color: #be5918;
     transform: scale(1.05);
@@ -422,12 +423,67 @@ h1 {
 
 }
 .arrow-icon {
-    width: 50px;
-    height: 50px;
+    margin-top: -20px;
     cursor: pointer;
-    transition: opacity 0.3s;
+    transition: transform 0.3s;
+}
+.arrow-icon:hover {
+    transform: translateY(-10px);
+}
+.menu-section h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    color: #0f2d11;
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+.menu-section p {
+    font-family: 'Syne', sans-serif;
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 650px;
+    align-self: flex-start;
+    text-align: left;
 }
 
-.arrow-icon:hover {
-    opacity: 0.7;
+.menu-action{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:20px;
 }
+.menu-action .order-btn {
+    border-radius: 30px;
+    background-color: chocolate;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+
+}
+.menu-action .order-btn:hover {
+    background-color: #be5918;
+    transform: scale(1.05);
+    background-color: #be5918;
+}
+.menu-action .arrow-icon {
+    margin-top: -20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.menu-action .arrow-icon:hover {
+    transform: translateY(-10px);
+}
+
+
+
+
