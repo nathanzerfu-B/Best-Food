@@ -394,43 +394,43 @@ h1 {
     /* Takes up 50% of the space */
 }
 
-/* Right side container */
+/* Container must be relative so images stay inside it */
 .menu-images-container {
     flex: 1;
     position: relative;
     height: 450px;
-    /* Adjust based on image height */
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-end;
+    /* Pushes the whole group to the right */
 }
 
-/* The image in the back (Knife/Cutting) */
+/* The Background Image (Chef cooking) */
 .img-back {
-    width: 320px;
-    height: 400px;
+    width: 380px;
+    height: 500px;
     object-fit: cover;
-    border-radius: 20px;
-    position: relative;
+    border-radius: 30px;
     z-index: 1;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* The image in the front (Chef with bowl) */
+/* The Overlapping Image (Hands cutting) */
 .img-front {
-    width: 280px;
+    width: 320px;
     height: 380px;
     object-fit: cover;
-    border-radius: 20px;
-    position:static;
-    /* This creates the overlap */
-    right: 20px;
-    bottom: -30px;
+    border-radius: 30px;
+    /* These properties pull it on top of the other image */
+    position: absolute;
+    left: 0;
+    /* Moves it to the left side of the container */
+    top: 120px;
+        /* Adjusts how high/low it sits */
     z-index: 2;
-    border: 8px solid white;
-    /* Adds that "cutout" border effect from your image */
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    /* Ensures it is on top */
+    border: 5px solid white;
+    /* Adds depth */
 }
-
 /* Menu Typography & Button alignment */
 .menu-content h2 {
     font-family: 'Syne', sans-serif;
