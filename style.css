@@ -117,13 +117,9 @@ a.logo span {
 nav ul {
 
     display: flex;
-
     list-style: none;
-
     gap: 25px;
-
     margin: 0;
-
     padding: 0;
 
 }
@@ -131,23 +127,16 @@ nav ul {
 
 
 nav li a {
-
     text-decoration: none;
-
     color: #f6efef;
-
     font-size: 1rem;
-
     transition: color 0.3s;
-
 }
 
 
 
 nav li a:hover {
-
     color: chocolate;
-
     text-decoration: underline;
 
 }
@@ -157,11 +146,8 @@ nav li a:hover {
 /* Search Bar & Nav Utility */
 
 .search-btn {
-
     display: flex;
-
     align-items: right;
-
     gap: 5px;
 
 }
@@ -169,13 +155,9 @@ nav li a:hover {
 
 
 .search-btn input {
-
     border-radius: 30px;
-
     padding: 5px 10px;
-
     border: none;
-
     outline: none;
 
 }
@@ -183,13 +165,9 @@ nav li a:hover {
 
 
 .search-icon {
-
     width: 40px;
-
     height: auto;
-
     fill: white;
-
     cursor: pointer;
 
 }
@@ -197,27 +175,16 @@ nav li a:hover {
 
 
 .order-btn {
-
     border-radius: 30px;
-
     background-color: chocolate;
-
     color: white;
-
     padding: 8px 10px;
-
     cursor: pointer;
-
     border: none;
-
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
     font-size: 0.9rem;
-
     transition: background-color 0.3s;
 
 }
@@ -225,11 +192,8 @@ nav li a:hover {
 
 
 .order-btn:hover {
-
     background-color: #be5918;
-
     transform: scale(1.05);
-
     background-color: #be5918;
 
 }
@@ -247,7 +211,7 @@ nav li a:hover {
     flex-direction: column;
     align-items: center;
     padding: 40px 80px;
-    margin-top: 20px;
+    margin-top:20px;
 
 }
 
@@ -293,7 +257,6 @@ h1 {
 }
 
 .plate {
-
     width: 400px;
     height: auto;
     border-radius: 50%;
@@ -307,11 +270,8 @@ h1 {
 /* --- Buttons & Video Controls --- */
 
 .second-order {
-
     display: flex;
-
     align-items: center;
-
     gap: 20px;
 
 }
@@ -319,33 +279,21 @@ h1 {
 
 
 .second-order .order-btn-1 {
-
     border-radius: 30px;
-
     background-color: chocolate;
-
     color: white;
-
     padding: 15px 40px;
-
     cursor: pointer;
-
     border: none;
-
     font-size: 1.1rem;
-
     font-weight: bold;
-
     transition: transform 0.2s, background-color 0.3s;
-
 }
 
 
 
 .second-order .order-btn-1:hover {
-
     transform: scale(1.05);
-
     background-color: #be5918;
 
 }
@@ -355,51 +303,31 @@ h1 {
 /* Decorative Icons */
 
 .second-order img {
-
     cursor: pointer;
-
     transition: transform 0.3s;
-
 }
 
 
 
 .second-order img:hover {
-
     transform: rotate(45deg);
-
 }
-
-
 
 /* Video Group Styling */
 
 .video-group {
-
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
     margin-left: 10px;
-
 }
-
-
 
 .video-btn {
-
     border: none;
-
     background: none;
-
     cursor: pointer;
-
     padding: 0;
-
 }
-
 
 
 .video-text {
@@ -417,7 +345,7 @@ h1 {
    align-items: center;
    justify-content: center;
    padding: 60px 50px;
-   margin-top: 50px;
+   margin-top: 120vh;
 }
 
 .meals-list  {
