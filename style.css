@@ -357,6 +357,7 @@ margin-top: -31vh;
     gap: 20px;
     padding: 10px;
     transition: transform 0.3s;
+  
 
 }
 .meals-list img {
@@ -364,12 +365,13 @@ margin-top: -31vh;
     height: 120px;
     border-radius: 15px;
     transition: transform 0.3s;
+    background:none; 
+    margin-left: 35px;
 }
 
 .meals-list img:hover {
     transform: translateY(-10px);
 }
-
 .nav-arrow {
     width: 50px;
     cursor: pointer;
