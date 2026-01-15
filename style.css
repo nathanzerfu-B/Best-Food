@@ -212,7 +212,7 @@ nav li a:hover {
     align-items: center;
     padding: 40px 80px;
     margin-top:20px;
-
+margin-bottom: 200px;
 }
 
 
@@ -345,7 +345,9 @@ h1 {
    align-items: center;
    justify-content: center;
    padding: 60px 50px;
-   margin-top: 120vh;
+margin-top: 240vh;
+    background-color:white;
+    gap: 30px;
 }
 
 .meals-list  {
@@ -387,6 +389,7 @@ h1 {
     background-color: white;
     /* Contrast from dark hero */
     gap: 50px;
+    margin-top: 0;
 }
 
 .menu-content {
