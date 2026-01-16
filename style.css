@@ -149,7 +149,7 @@ nav li a:hover {
     display: flex;
     align-items: right;
     gap: 5px;
-
+margin-top: 10px;
 }
 
 
@@ -237,7 +237,7 @@ h1 {
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 40px;
-    max-width: 650px;
+    max-width: 400px;
     align-self: flex-start;
     text-align: left;
 
@@ -262,7 +262,7 @@ h1 {
     border-radius: 50%;
     border: none;
     outline: none;
-    margin-left: 250px;
+    margin-left: 200px;
     margin-top: -30px;
 }
 
@@ -364,8 +364,14 @@ margin-top: -31vh;
     width: 120px;
     height: 120px;
     border-radius: 15px;
-    transition: transform 0.3s;
-    background:none; 
+transition: transform 0.3s, background-color 0.3s;
+
+    /* --- CHANGE THESE LINES --- */
+    background-color: #F2F7FB;
+    /* Applies color to each image box */
+    /* Adds space between the food and the edge of the color */
+
+    /* Ensures the food doesn't get cut off */
     margin-left: 35px;
 }
 
@@ -448,7 +454,7 @@ margin-top: -31vh;
 
 .menu-content p {
     color: #555;
-    max-width: 450px;
+    max-width: 500px;
     margin-bottom: 30px;
 }
 
@@ -472,4 +478,30 @@ margin-top: -31vh;
 .order-btn-menu:hover {
     background-color: #be5918;
     transform: translateY(-2px);
+}
+
+/* Special Dish Section */
+.special-dish {
+    background-color: #0f2d11;
+    width: 100%;
+        height: 100vh;
+        margin-top: -10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.special-dish h2 {
+    font-family: 'Syne', sans-serif;
+    color: #f1eeee;
+    font-size: 2.7rem;
+    font-weight:bolder ;
+    text-align: center;
+}
+.special-dish p {
+    color: #d1d1d1;
+    max-width: 740px;
+    margin-top:-20px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
 }
