@@ -505,3 +505,43 @@ transition: transform 0.3s, background-color 0.3s;
     line-height: 1.6;
     text-align: center;
 }
+.dish-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.dish-item {
+    background-color: #f6efef;
+    border-radius: 20px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.dish-item:hover {
+    transform: translateY(-10px);
+}
+.dish-item img {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+.dish-item h3 {
+    font-family: 'Syne', sans-serif;
+    color: #0f2d11;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.dish-item p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+.dish-item span {
+    font-weight: bold;
+    color: chocolate;
+    font-size: 1.1rem;
+}
