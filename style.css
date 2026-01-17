@@ -511,7 +511,7 @@ transition: transform 0.3s, background-color 0.3s;
     margin-top: 40px;
 }
 .dish-item {
-    background-color: #f6efef;
+    background-color:#115f16;
     border-radius: 20px;
     padding: 20px;
     width: 220px;
@@ -525,4 +525,27 @@ transition: transform 0.3s, background-color 0.3s;
     width: 20px;
     height: 20px;
     border-radius: 15px;
+}
+.dish-item h3 {
+    font-family: 'Syne', sans-serif;
+    color: #0f2d11;
+    font-size: 1.1rem;
+    margin: 15px 0 10px 0;
+}
+.dish-item p {
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.dish-item .order-btn-dish {
+    background-color: chocolate;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
