@@ -542,7 +542,6 @@ transition: transform 0.3s, background-color 0.3s;
     color: #f7faf7;
     font-size: 1.1rem;
     margin: 15px 0 10px 0;
-    max-width: 500px;
 }
 .dish-item .price {
     color:#bd4f0b;
@@ -557,9 +556,22 @@ transition: transform 0.3s, background-color 0.3s;
     line-height: 1.4;
     margin-bottom: 15px;
 }
+.rating {
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.star{
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
 
 .dish-item .order-btn-dish {
     background-color: chocolate;
+    display: block;
+    margin-top: 20px;
     color: white;
     padding: 8px 20px;
     border-radius: 30px;
