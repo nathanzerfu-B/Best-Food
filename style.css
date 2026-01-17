@@ -509,13 +509,16 @@ transition: transform 0.3s, background-color 0.3s;
     display: flex;
     gap: 30px;
     margin-top: 40px;
+    margin-left: 150px;
 }
 .dish-item {
     background-color:#115f16;
-    border-radius: 20px;
-    padding: 20px;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;         
+    padding: 30px;
     width: 220px;
-    text-align: center;
+    text-align:left;
     transition: transform 0.3s;
 }
 .dish-item:hover {
@@ -528,12 +531,18 @@ transition: transform 0.3s, background-color 0.3s;
 }
 .dish-item h3 {
     font-family: 'Syne', sans-serif;
-    color: #0f2d11;
+    color: #f7faf7;
     font-size: 1.1rem;
     margin: 15px 0 10px 0;
 }
+.dish-item .price {
+    color:#bd4f0b;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 .dish-item p {
-    color: #555;
+    color: #ffffff;
     font-size: 0.9rem;
     line-height: 1.4;
     margin-bottom: 15px;
@@ -548,4 +557,7 @@ transition: transform 0.3s, background-color 0.3s;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+.dish-item .order-btn-dish:hover {
+    background-color: #be5918;
 }
