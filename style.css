@@ -650,16 +650,99 @@ align-self: center;
     cursor: pointer;
     transition: color 0.3s;
     display: flex;
+    margin-bottom: 30px;
 }
+
 .food-type span{
     margin-left: 10px;
 align-content: space-around;
 border: #d1d1d1 solid 2px;
-    padding: 15px;
+    padding: 5px 15px 10px 8px;
     border-radius: 15px 0px 10px 0px;
     font-size: 0.8rem;
-background-color: rgb(248, 241, 241);
+background-color: rgba(189, 175, 175, 0.281);
 }
 .food-type span:hover {
     background-color: chocolate;
 }
+
+.food-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 50px;
+}
+.food-item {
+    background-color:#ffffff;
+    border-radius:20px;        
+    padding:30px 30px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+        /* Adds space at the top for the floating image */
+    text-align:left;
+    transition: transform 0.3s;
+}
+.food-row {
+    display: flex;
+    gap: 30px;
+}
+.food-info{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+.food-item:hover {
+    transform: translateY(-10px);
+}
+.food-item .food-photo {
+    width: 180px;
+    height: 150px;
+    align-items: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.food-item .food-photo:hover {
+    transform: translateY(-10px);
+}
+.food-item h4 {
+    font-family: 'Syne', sans-serif;
+    color: #000000;
+    font-size: 1.1rem;
+    margin: 15px 0 10px 0;
+    text-align: left;
+    width:100%;
+
+        /* Prevents title from overlapping the image area */
+}
+.food-item .food-price {
+    color:#141312;
+    margin-bottom: 10px;
+    text-align: left;
+    margin-top: 20px;
+    font-size:1.2rem;
+    font-weight: bold;
+}
+
+
+.food-item .order-btn-food {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-top: 20px;
+    color: rgb(168, 166, 166);
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+align-self: center;
+border:2px solid rgba(224, 217, 217, 0.63);
+}
+.food-item .order-btn-food:hover {
+    background-color: #be5918;
+    color: white;
+}
+
+
+
+
