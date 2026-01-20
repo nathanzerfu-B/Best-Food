@@ -619,9 +619,8 @@ align-self: center;
 /* Menu List Heading */
 .menu-list {
     width: 100%;
-    margin-bottom: 40px;
     background-color:#F2F7FB;
-    height: 200vh;
+    height: 170vh;
     /* --- ADD THIS --- */
         padding-top: 60px;
         /* Use padding instead of margin to create space inside */
@@ -753,17 +752,18 @@ border:2px solid rgba(224, 217, 217, 0.63);
     gap: 10px;
     /* Adds space between the button and the arrow */
     /* Remove text-align: center; it does not work here */
-    margin-top: 40px;
+  
     padding-bottom: 50px;
     /* Adds some space at the very bottom of the page */
+
 }
 .view-more-btn-1{
-    background-color: rgb(225, 107, 11);
+    background-color:chocolate;
     padding:10px   15px;
     border: none;
     border-radius: 30px;
     text-align: center;
-    
+
     cursor: pointer;
     transition: background-color 0.3s;
     color: #ffffff;
