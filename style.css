@@ -489,6 +489,7 @@ transition: transform 0.3s, background-color 0.3s;
         flex-direction: column;
         align-items: center;
 }
+
 .special-dish h2 {
     font-family: 'Syne', sans-serif;
     color: #f1eeee;
@@ -616,158 +617,111 @@ align-self: center;
     background-color: chocolate;
 }
 
-/* Menu List Heading */
+/* Menu List Heading */ 
+/* 1. Main Container */
 .menu-list {
-    width: 100%;
-    background-color:#F2F7FB;
-    height: 170vh;
-    /* --- ADD THIS --- */
-        padding-top: 60px;
-        /* Use padding instead of margin to create space inside */
-        display: flex;
-        /* Helps align content */
-        flex-direction: column;
-        align-items: center;
-        /* Centers the H3 and list horizontally */
-}
-.menu-list h3 { 
-    font-family: 'Syne', sans-serif;
-    color: #000000;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 40px;
-    max-width: 500px;
-    /* --- CHANGE THIS --- */
-        margin-top: 0;
-        /* Remove the margin that was pushing the box down */
-}
-
-.food-type{
-    margin-right: 50px;
-    font-size: 1.2rem;
-    color: #333333;
-    cursor: pointer;
-    transition: color 0.3s;
     display: flex;
-    margin-bottom: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #F2F7FB;
 }
 
-.food-type span{
-    margin-left: 10px;
-align-content: space-around;
-border: #d1d1d1 solid 2px;
-    padding: 5px 15px 10px 8px;
-    border-radius: 15px 0px 10px 0px;
-    font-size: 0.8rem;
-background-color: rgba(189, 175, 175, 0.281);
-}
-.food-type span:hover {
-    background-color: chocolate;
-}
-
+/* 2. Grid System (4 columns) */
 .food-items {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-left: 50px;
-}
-.food-item {
-    background-color:#ffffff;
-    border-radius:20px;        
-    padding:30px 30px;
-    width: 150px;
-    height:150px;
-    position: relative;
-        /* Adds space at the top for the floating image */
-    text-align:left;
-    transition: transform 0.3s;
-}
-.food-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Forces 4 cards per row */
     gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 50px;
 }
-.food-info{
+
+/* 3. Individual Food Card */
+.food-item {
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
-    align-items:start;
-    margin-top: 30px;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s ease;
+}
 
-}
-.food-item .food-photo {
-    width: 180px;
-    height: 150px;
-    transition: transform 0.3s, background-color 0.3s;
-}
-.food-item .food-photo:hover {
+.food-item:hover {
     transform: translateY(-10px);
 }
-.food-item h4 {
-    margin-top: 40px;
-    font-family: 'Syne', sans-serif;
-    color: #000000;
-    font-size: 1.1rem;
-    margin: 15px 0 10px 0;
-    text-align: left;
-    width:100%;
-        /* Prevents title from overlapping the image area */
-}
-.food-item .food-price {
-    color:#141312;
-    margin-bottom: 10px;
-    text-align: left;
-    margin-top: 20px;
-    font-size:1.2rem;
-    font-weight: bold;
+
+/* Specific Green Card (Optional, from your reference) */
+.active-card {
+    background-color: #5BA461;
 }
 
-
-.food-item .order-btn-food {
-    background-color: rgb(255, 255, 255);
-    display: block;
-    margin-top: 20px;
-    color: rgb(168, 166, 166);
-    padding: 8px 20px;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s;
-align-items: start;
-border:2px solid rgba(224, 217, 217, 0.63);
-}
-.food-item .order-btn-food:hover {
-    background-color: #be5918;
+.active-card h4,
+.active-card .food-price {
     color: white;
 }
+
+/* 4. Card Content Styling */
+.food-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.food-item h4 {
+    margin: 10px 0;
+    font-family: 'Syne', sans-serif;
+    font-size: 1.1rem;
+}
+
+.food-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.order-btn-food {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 8px 20px;
+    color: #888;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.order-btn-food:hover {
+    background-color: chocolate;
+    color: white;
+    border-color: chocolate;
+}
+
+/* 5. View More Button (Fixes the Overlap) */
 .view-more-dishes-1 {
     display: flex;
-    flex-direction: row;
-    /* --- ADD THIS --- */
-    justify-content: center;
-    /* Centers items horizontally in Flexbox */
     align-items: center;
-    /* Centers items vertically */
-    width: 100%;
-    /* Ensures the container spans the full width */
-    gap: 10px;
-    /* Adds space between the button and the arrow */
-    /* Remove text-align: center; it does not work here */
-  
-    padding-bottom: 50px;
-    /* Adds some space at the very bottom of the page */
-
+    gap: 15px;
+    margin-top: 20px;
+    /* Space from the bottom of the grid */
 }
-.view-more-btn-1{
-    background-color:chocolate;
-    padding:10px   15px;
+
+.view-more-btn-1 {
+    background-color: chocolate;
+    color: white;
+    padding: 12px 35px;
+    border-radius: 50px;
     border: none;
-    border-radius: 30px;
-    text-align: center;
-
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s;
-    color: #ffffff;
 }
 
-
-
+.arrow-icon {
+    width: 45px;
+    height: 45px;
+}
