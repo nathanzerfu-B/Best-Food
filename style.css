@@ -656,7 +656,6 @@ max-width: 500px;
         border-bottom-right-radius: 50px;
     /* Perfect pill shape */
     background-color: #ffffff;
-    border: 1px solid #efefef;
     /* Soft light border */
     color: #555;
     font-size: 0.9rem;
@@ -693,15 +692,10 @@ max-width: 500px;
 
 /* 3. Individual Food Card */
 .food-item {
-    background-color: #ffffff;
-    border-radius: 25px;
-    padding: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
-    transition: transform 0.3s ease;
 }
 
 .food-item:hover {
@@ -709,23 +703,44 @@ max-width: 500px;
 }
 
 /* Specific Green Card (Optional, from your reference) */
-.active-card {
-    background-color: #5BA461;
+.food-photo.active {
+    background-color: #5BA461 !important; /* The green background */
+    border: 10px solid #ffffff;           /* Keeps the thick white border */
+    box-shadow: 0 10px 25px rgba(91, 164, 97, 0.3); /* Adds a soft green glow */
+    transform: scale(1.05);               /* Makes it slightly larger */
 }
-
+.order-btn-food.active {
+    background-color: chocolate !important;
+    /* Changes background to orange/chocolate */
+    color: #ffffff !important;
+    /* Changes text to white */
+    border-color: chocolate !important;
+    /* Matches the border to the background */
+    box-shadow: 0 4px 12px rgba(210, 105, 30, 0.3);
+    /* Adds a soft glow */
+    transform: translateY(-2px);
+    /* Gives it a slight "pressed" or "active" lift */
+}
 
 /* 4. Card Content Styling */
 .food-photo {
     width: 140px;
     height: 140px;
+    border-radius: 25px;
+        padding: 25px;
     object-fit: contain;
     margin-bottom: 15px;
+    border: 10px solid #fff;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
+        transition: transform 0.3s ease;
 }
 
 .food-item h4 {
     margin: 10px 0;
     font-family: 'Syne', sans-serif;
     font-size: 1.1rem;
+    max-width: 300px;
 }
 
 .food-price {
@@ -743,6 +758,7 @@ max-width: 500px;
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s;
+    margin-top: 15px;
 }
 
 .order-btn-food:hover {
