@@ -512,9 +512,9 @@ transition: transform 0.3s, background-color 0.3s;
 }
 .dish-item {
     background-color:#115f16;
-    border-top-left-radius:20px;
+    border-top-left-radius:50px;
     border-top-right-radius:20px;
-    border-bottom-right-radius:20px;         
+    border-bottom-right-radius:50px;         
     padding: 30px;
     width: 150px;
     height: 180px;
@@ -626,7 +626,60 @@ align-self: center;
     padding: 60px 20px;
     background-color: #F2F7FB;
 }
+ .menu-list h3 {
+    font-family: 'Syne', sans-serif;
+    color: #0f2d11;
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+max-width: 500px;
+    text-align: center;
+}
+/* Container for the filter categories */
+.food-type {
+    display: flex;
+    justify-content: center;
+    /* Centers the filters like the design */
+    align-items: center;
+    gap: 15px;
+    /* Clean spacing between buttons */
+    margin-bottom: 50px;
+    /* Space between filters and the food grid */
+    width: 100%;
+    
+}
 
+/* Individual Category Buttons */
+.food-type span {
+    padding: 10px 25px;
+    border-top-left-radius: 50px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 50px;
+    /* Perfect pill shape */
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    /* Soft light border */
+    color: #555;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover Effect */
+.food-type span:hover {
+    background-color: #f9f9f9;
+    border-color: chocolate;
+    color: chocolate;
+}
+
+/* Active State (For the 'All' button or current selection) */
+.food-type span.active {
+    background-color: chocolate;
+    color: #ffffff;
+    border-color: chocolate;
+    box-shadow: 0 4px 10px rgba(210, 105, 30, 0.2);
+}
 /* 2. Grid System (4 columns) */
 .food-items {
     display: grid;
@@ -660,10 +713,6 @@ align-self: center;
     background-color: #5BA461;
 }
 
-.active-card h4,
-.active-card .food-price {
-    color: white;
-}
 
 /* 4. Card Content Styling */
 .food-photo {
