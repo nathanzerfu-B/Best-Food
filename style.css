@@ -684,13 +684,12 @@ align-self: center;
 .food-items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Forces 4 cards per row */
-    gap: 10px;
-    width: 90%;
-    max-width: 1000px;
-    margin-bottom: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    gap: 20px;
+    width: 100%;
+    max-width:900px;
+    /* Limits width so it doesn't stretch too far */
+    margin: 0 auto 50px auto;
+    /* Centering the whole grid on the page */
 }
 
 /* 3. Individual Food Card */
