@@ -837,7 +837,7 @@ font-size :16px ;
     font-weight:bolder ;
     text-align: left;
     margin-bottom: 5px;
-    max-width: 500px;
+    max-width: 900px;
 }
 .app-content p {
     color: #0f2d11;
@@ -852,7 +852,7 @@ font-size :16px ;
     margin-top: 30px;
 }
 .app-store-buttons img {
-    width: 150px;
+    width: 100px;
     height: auto;
     background-color: none;
     cursor: pointer;
