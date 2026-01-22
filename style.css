@@ -798,3 +798,26 @@ font-size :16px ;
     width: 45px;
     height: 45px;
 }
+
+/* =========================================
+   7. FOOD APP SECTION
+   ========================================= */
+.Food-App {
+    background-color: #EBF8E0;
+    width: 100%;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+}
+.Food-App h2 {
+    font-family: 'Syne', sans-serif;
+    color: #0f2d11;
+    font-size: 2rem;
+    font-weight:bolder ;
+    text-align: left;
+    margin-bottom: -25px;
+    max-width: 500px;
+}
