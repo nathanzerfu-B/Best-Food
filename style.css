@@ -845,6 +845,19 @@ font-size :16px ;
     line-height: 1.6;
     text-align: left;
 }
+.app-store-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.app-store-buttons img {
+    width: 150px;
+    height: auto;
+    background-color: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
 
 
 .app-image img {
