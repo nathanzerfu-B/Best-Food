@@ -882,19 +882,60 @@ height: 35px;
     width: 750px;;
     margin-right: -100px;
 }
-
-/* Example of the next section to see the transition */
-.next-section {
-    background-color: #ffffff;
-    padding: 80px 0;
+/*== reservation section ==*/
+.reservation {
+    background-color: #0f2d11;
     width: 100%;
-}
-.Reservation {
-    background-color: #F2F7FB;
-    width: 100%;
-    padding: 80px 90px;
+    padding: 60px 90px;
     display: flex;
     justify-content: center;
     height: auto;
-    overflow: hidden;    
-}   
+    overflow: hidden;   
+ }
+    .reservation-container {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        width: 100%;
+    }
+    .reservation-content{
+        flex:1;
+        padding: 60px 0px;
+    }
+    .reservation-content h2 {
+        font-family:serif;
+        color: #f1eeee;
+        font-size: 2.1rem;
+        line-height: 1.1;
+        margin-bottom: 25px;
+        
+    }
+    .reservation-form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 400px;
+    }
+    .form-content{
+        padding: 10px;
+        border-radius: 8px;
+        display: flex;
+        border: none;
+        outline: none;
+    }
+    .reservation-btn {
+        background-color: chocolate;
+        color: white;
+        padding: 12px 35px;
+        border-radius: 50px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin-top: 10px;
+        width: 150px;
+    }
+    .reservation-btn:hover {
+        background-color: #be5918;
+    }
