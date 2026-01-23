@@ -884,116 +884,204 @@ height: 35px;
 }
 /*== reservation section ==*/
 
+/* --- 1. Main Layout & Background Setup --- */
 .reservation-section {
     position: relative;
-    padding: 100px 0 0 0;
-    /* Space at top, none at bottom */
+    width: 100%;
+    /* Extra padding at bottom to let the image show through */
+    padding: 80px 0 120px 0;
     background-color: #fff;
-    overflow: hidden;
 }
 
+/* The Background Image Layer */
+.food-bg-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    /* Covers bottom 45% of the section */
+    background-image: url('img/your-food-image.webp');
+    /* PUT YOUR IMAGE PATH HERE */
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    /* Lowest layer */
+}
+
+/* The Container (Holds Form + Text) */
 .reservation-container {
-    display: flex;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
-    gap: 50px;
+    padding: 0 20px;
+    display: flex;
+    gap: 60px;
+    /* Space between Form and Text */
     position: relative;
     z-index: 2;
-    /* Keeps text and form above the image */
-    padding-bottom: 100px;
+    /* Sits ABOVE the background image */
 }
 
-/* The White Card */
+/* --- 2. Left Side: The White Form Card --- */
 .reservation-card {
     flex: 1;
-    background: #fff;
+    background: #ffffff;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    /* Deep shadow to make it pop off the background */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
-.reservation-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 30px;
+.reservation-form h3 {
+    font-size: 1.8rem;
     font-family: serif;
+    /* Match your font */
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin-bottom: 30px;
 }
 
-/* Grid for Form Inputs */
+/* Form Grid System */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* Two columns */
+    /* Two Columns */
     gap: 20px;
 }
 
+.full-width {
+    grid-column: span 2;
+    /* Spans across both columns */
+}
+
+/* Input Styling */
 .input-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
 .input-group label {
-    font-weight: bold;
     font-size: 0.9rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
 }
 
 .input-group input,
 .input-group select,
 .input-group textarea {
-    padding: 12px;
-    border: 1px solid #f0f0f0;
-    background-color: #fafafa;
-    border-radius: 5px;
+    background-color: #F9F9F9;
+    /* Light Grey Background */
+    border: 1px solid transparent;
+    /* No visible border initially */
+    border-radius: 6px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    color: #555;
+    outline: none;
+    transition: 0.3s;
 }
 
-.full-width {
-    grid-column: span 2;
-    margin-top: 20px;
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #ccc;
 }
 
-.submit-btn {
+.input-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Button Styling */
+.reservation-btn {
     width: 100%;
-    background-color: #ff6b00;
-    /* Orange color from your screenshot */
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
     margin-top: 25px;
-    font-weight: bold;
+    background-color: #FF7A00;
+    /* Vibrant Orange */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
-/* Right Side Text */
+.reservation-btn:hover {
+    background-color: #e66e00;
+}
+
+/* --- 3. Right Side: Text & Contact Info --- */
 .reservation-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding-top: 20px;
-    padding:30px ;
-    border: #d1d1d1 solid 1px;
 }
 
 .reservation-info h2 {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-bottom: 20px;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    color: #0f2d11;
+    /* Dark Green/Black */
+    font-family: serif;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 
-.orange-text {
+.description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 90%;
+}
+
+/* Contact Details Styling */
+.info-block {
+    margin-bottom: 25px;
+}
+
+.green-label {
     color: #4a7c44;
-    /* Match the green/orange style in your mockup */
-    margin-bottom: 5px;
+    /* Leaf Green */
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0 0 10px 0;
 }
 
-/* The Bottom Image Background */
-.bottom-bg-image {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 450px;
-    /* Adjust height to match your photo */
-    background-image: url('img/your-food-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: 1;
+.icon-text-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.orange-icon {
+    color: #FF7A00;
+    flex-shrink: 0;
+}
+
+.info-text {
+    color: #222;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* --- 4. Mobile Responsiveness --- */
+@media (max-width: 900px) {
+    .reservation-container {
+        flex-direction: column;
+        /* Stack vertically on phones */
+    }
+
+    .reservation-info {
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .food-bg-layer {
+        height: 200px;
+        /* Smaller image on mobile */
+    }
 }

@@ -258,7 +258,6 @@ pain was born and I will give you a complete account of the system </p>
       <img src="img/Food Mobile App.png" alt="Food App">
     </div>
 </div>
-
 <section class="reservation-section">
     <div class="reservation-container">
 
@@ -275,6 +274,7 @@ pain was born and I will give you a complete account of the system </p>
                         <label for="email">Your email*</label>
                         <input type="email" id="email" placeholder="Your email" required>
                     </div>
+
                     <div class="input-group">
                         <label for="phone">Phone number*</label>
                         <input type="tel" id="phone" placeholder="Your phone number" required>
@@ -283,6 +283,7 @@ pain was born and I will give you a complete account of the system </p>
                         <label for="date">Reservation Date*</label>
                         <input type="date" id="date" required>
                     </div>
+
                     <div class="input-group">
                         <label for="time">Reservation Time*</label>
                         <input type="time" id="time" required>
@@ -290,41 +291,56 @@ pain was born and I will give you a complete account of the system </p>
                     <div class="input-group">
                         <label for="person">Person*</label>
                         <select id="person">
-                            <option>Person-1</option>
-                            <option selected>Person-2</option>
-                            <option>Person-3+</option>
+                            <option>Person-2</option>
+                            <option>Person-3</option>
+                            <option>Person-4+</option>
                         </select>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="notes">Notes*</label>
+                        <textarea id="notes" placeholder="Message"></textarea>
                     </div>
                 </div>
 
-                <div class="input-group full-width">
-                    <label for="notes">Notes*</label>
-                    <textarea id="notes" placeholder="Message"></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Request Reservation</button>
+                <button type="submit" class="reservation-btn">Request Reservation</button>
             </form>
         </div>
 
         <div class="reservation-info">
             <h2>Elevate Your Dining<br>Experience with a Reserved<br>Table at Fast Food</h2>
-            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
-                demoralized by the charms of pleasure of the moment.</p>
 
-            <div class="contact-details">
-                <div class="contact-item">
-                    <h4 class="orange-text">Our Location</h4>
-                    <p>📍 58 Middle Point Rd, Los Angeles, 94125</p>
+            <p class="description">On the other hand, we denounce with righteous indignation and dislike men who are so
+                beguiled and demoralized by the charms of pleasure of the moment,</p>
+
+            <div class="info-block">
+                <h4 class="green-label">Our Location</h4>
+                <div class="icon-text-row">
+                    <svg class="orange-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span class="info-text">58 Middle Point Rd, Los Angeles, 94125</span>
                 </div>
-                <div class="contact-item">
-                    <h4 class="orange-text">Call Us</h4>
-                    <p>📞 +01834089301 / 01971867310</p>
+            </div>
+
+            <div class="info-block">
+                <h4 class="green-label">Call Us</h4>
+                <div class="icon-text-row">
+                    <svg class="orange-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span class="info-text">+01834089301 / 01971867310</span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bottom-bg-image"></div>
+    <div class="food-bg-layer"></div>
 </section>
 </body>
 </html>
