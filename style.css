@@ -1023,13 +1023,11 @@ height: 35px;
 
 .reservation-info h2 {
     font-size: 2.8rem;
-    line-height: 1.15;
+    line-height: 1;
     color: #0f2d11;
     /* Dark Green/Black */
     font-family: serif;
     font-weight: 700;
-    margin-bottom: 25px;
-}
 
 .description {
     color: #555;
@@ -1040,7 +1038,7 @@ height: 35px;
 
 /* Contact Details Styling */
 .info-block {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .green-label {
