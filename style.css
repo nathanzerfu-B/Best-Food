@@ -883,60 +883,117 @@ height: 35px;
     margin-right: -100px;
 }
 /*== reservation section ==*/
-.reservation {
-    background-color: #0f2d11;
-    width: 100%;
-    padding: 60px 90px;
+
+.reservation-section {
+    position: relative;
+    padding: 100px 0 0 0;
+    /* Space at top, none at bottom */
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.reservation-container {
     display: flex;
-    justify-content: center;
-    height: auto;
-    overflow: hidden;   
- }
-    .reservation-container {
-        display: flex;
-        align-items: center;
-        max-width: 1200px;
-        width: 100%;
-    }
-    .reservation-content{
-        flex:1;
-        padding: 60px 0px;
-    }
-    .reservation-content h2 {
-        font-family:serif;
-        color: #f1eeee;
-        font-size: 2.1rem;
-        line-height: 1.1;
-        margin-bottom: 25px;
-        
-    }
-    .reservation-form {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        max-width: 500px;
-        border: #01220F 2px solid;
-    }
-    .form-content{
-        padding: 60px 40px;
-        border-radius: 8px;
-        display: flex;
-        border: none;
-        outline: none;
-    }
-    .reservation-btn {
-        background-color: chocolate;
-        color: white;
-        padding: 12px 35px;
-        border-radius: 50px;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        margin-top: 10px;
-        width: 150px;
-    }
-    .reservation-btn:hover {
-        background-color: #be5918;
-    }
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+    /* Keeps text and form above the image */
+    padding-bottom: 100px;
+}
+
+/* The White Card */
+.reservation-card {
+    flex: 1;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    font-family: serif;
+}
+
+/* Grid for Form Inputs */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid #f0f0f0;
+    background-color: #fafafa;
+    border-radius: 5px;
+}
+
+.full-width {
+    grid-column: span 2;
+    margin-top: 20px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #ff6b00;
+    /* Orange color from your screenshot */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Right Side Text */
+.reservation-info {
+    flex: 1;
+    padding-top: 20px;
+    padding:30px ;
+    border: #d1d1d1 solid 1px;
+}
+
+.reservation-info h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.orange-text {
+    color: #4a7c44;
+    /* Match the green/orange style in your mockup */
+    margin-bottom: 5px;
+}
+
+/* The Bottom Image Background */
+.bottom-bg-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 450px;
+    /* Adjust height to match your photo */
+    background-image: url('img/your-food-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}

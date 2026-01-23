@@ -258,40 +258,74 @@ pain was born and I will give you a complete account of the system </p>
       <img src="img/Food Mobile App.png" alt="Food App">
     </div>
 </div>
-<div class="Reservation">
-    <div class="reservation-Container">
-    <div class="reservation-content">
-        <form class="reservation-form">
-        <div class="form-description">
-        <h3>Smooth Reservations for <br>Memorable Dining Experiences</h3>
+
+<section class="reservation-section">
+    <div class="reservation-container">
+
+        <div class="reservation-card">
+            <form class="reservation-form">
+                <h3>Smooth Reservations for <br>Memorable Dining Experiences</h3>
+
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="name">Your Name*</label>
+                        <input type="text" id="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Your email*</label>
+                        <input type="email" id="email" placeholder="Your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone number*</label>
+                        <input type="tel" id="phone" placeholder="Your phone number" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="date">Reservation Date*</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="time">Reservation Time*</label>
+                        <input type="time" id="time" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="person">Person*</label>
+                        <select id="person">
+                            <option>Person-1</option>
+                            <option selected>Person-2</option>
+                            <option>Person-3+</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="notes">Notes*</label>
+                    <textarea id="notes" placeholder="Message"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Request Reservation</button>
+            </form>
         </div>
-        <div class="form-content">
-            <label for="full name">Your Name*</label>
-            <input type="text" placeholder="Your Name" required>
-            <label for="email">Your email*</label>
-            <input type="email" placeholder="Your Email" required>
+
+        <div class="reservation-info">
+            <h2>Elevate Your Dining<br>Experience with a Reserved<br>Table at Fast Food</h2>
+            <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                demoralized by the charms of pleasure of the moment.</p>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h4 class="orange-text">Our Location</h4>
+                    <p>📍 58 Middle Point Rd, Los Angeles, 94125</p>
+                </div>
+                <div class="contact-item">
+                    <h4 class="orange-text">Call Us</h4>
+                    <p>📞 +01834089301 / 01971867310</p>
+                </div>
             </div>
-            <div class="form-content">
-            <label for="Phone">Phone number*</label>
-            <input type="tel" placeholder="Phone Number" required>
-            <label for="rese-date">Reservation Date*</label>
-            <input type="date" required>
-            </div>
-            <div class="form-content">
-            <label for="rese-time">Reservation Time*</label>
-            <input type="time" required>
-            <label for="person">Person*</label> 
-             <input type="number" placeholder="Number of Persons" required>
-           
         </div>
-           <label for="notes">Notes*</label>
-            <input type="text" placeholder="Notes" required>
-            <button type="submit" class="reservation-btn">Request Reservation </button>
-      
-    </form>
     </div>
-    </div>
-        
+
+    <div class="bottom-bg-image"></div>
+</section>
 </body>
 </html>
 
