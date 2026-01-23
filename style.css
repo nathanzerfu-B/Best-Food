@@ -816,9 +816,10 @@ font-size :16px ;
 .Food-App {
     background-color: #E6D1C3;
     width: 100%;
-    padding: 80px 90px;
+    padding: 0px 90px;
     display: flex;
     justify-content:center;
+    height: auto;
     overflow: hidden;    
 }
 .app-container {
@@ -830,14 +831,16 @@ font-size :16px ;
 }
 .app-content{
     flex:1;
+    padding: 80px 0px;
 }
 
 .app-content h2 {
-    font-family: "Mona Sans",Helvetica,Arial,sans-serif;
+    font-family:serif;
     color: #0f2d11;
     font-size: 2.1rem;
     line-height: 1.1;
     margin-bottom: 25px;
+    
 }
 
 .app-content p {
@@ -854,7 +857,8 @@ font-size :16px ;
     gap: 15px;
 }
 .store-link{
-height: 45px;
+height: 35px;
+
     /* Fixed height for consistency */
     width: auto;
     cursor: pointer;
@@ -863,6 +867,7 @@ height: 45px;
     background: transparent;
     border-radius: 8px;
 }
+
 .store-link:hover {
     transform: translateY(-3px);
 }
@@ -871,10 +876,16 @@ height: 45px;
     flex: 1;
     display: flex;
     justify-content: flex-end;
+    align-items: flex-end;
 }
 .app-image img {
-    width: 750px;
-    height: auto;
+    width: 750px;;
     margin-right: -100px;
-    margin-top: -50px;
+}
+
+/* Example of the next section to see the transition */
+.next-section {
+    background-color: #ffffff;
+    padding: 80px 0;
+    width: 100%;
 }
