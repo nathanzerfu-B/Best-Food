@@ -1095,7 +1095,6 @@ height: 35px;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    margin-left: 20px;
 }
 .Patrons-section h2 {
     font-family: 'Syne', sans-serif;
@@ -1126,15 +1125,15 @@ height: 35px;
 }
 .patron-item{
     width:350px;
-    height:200px ;
+    height:220px ;
     border:2px solid #ccc;
     border-radius:15px ;
     padding:20px ;
+    padding-bottom: 40px;
     background-color:#033719 ;
     color: #fff;
     text-align: left;
     transition: transform 0.3s;
-    overflow: hidden;
 }
 .patron-photo {
     width: 50px;
@@ -1148,8 +1147,66 @@ height: 35px;
     margin-bottom: 10px;
 }
 .patron-item p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.4;
     color: #fff;
+    text-align: left;
+}
+.patron-item-small{
+    width:350px;
+    height:170px ;
+    border:2px solid #ccc;
+    border-radius:15px ;
+    padding:15px ;
+    padding-bottom: 30px;
+    background-color:#EDF7E0;
+    color: #20241F;
+    text-align: left;
+    transition: transform 0.3s;
+}
+.patron-photo-small {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.patron-item-small h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.patron-item-small p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #6d6a6a;
+    text-align: left;
+}
+.patron-item-big{
+    width:350px;
+    height:270px ;
+    border:2px solid #ccc;
+    border-radius:15px ;
+    padding:25px ;
+    padding-bottom: 50px;
+    background-color: #EDF7E0;
+        color: #20241F;
+    text-align: left;
+    transition: transform 0.3s;
+}
+.patron-photo-big {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.patron-item-big h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+.patron-item-big p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    color: #6d6a6a;
     text-align: left;
 }
