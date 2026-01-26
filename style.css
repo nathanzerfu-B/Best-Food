@@ -74,23 +74,14 @@ nav {
 /* Brand & Logo */
 
 .brand {
-
     display: flex;
-
     align-items: center;
-
     gap: 10px;
-
 }
 
-
-
 .nav-logo-img {
-
     height: 40px;
-
     width: auto;
-
 }
 
 
@@ -1420,7 +1411,61 @@ height: 35px;
 }
 .instagram-photos img {
     width: 252.9px;
-    height: 150px;
+    height: 180px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+}
+.instagram-photos img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.footer{
+    background-color: #161716;
+    width: 100%;
+    padding: 90px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    justify-content: space-between;
+}
+
+.footer-content p {
+    color: #f6f2f2;
+    max-width: 400px;
+    line-height: 1.6;
+}
+.branding-footer {
+    display: block;
+    align-items: left;
+    gap: 10px;
+    width: 700px;
+}
+
+.branding-footer img {
+    height: 70px;
+    width: auto;
+}
+.branding-footer a  {
+    text-decoration: none;
+    color:#68A65D;
+    font-weight: bold;
+    font-size: 1.9rem;
+}
+.branding-footer a span {
+    color: chocolate;
+}
+
+.branding-footer a:hover {
+    text-decoration: underline;
+}
+
+.branding-footer p{
+    color: #ffffff;
+    font-size:0.9rem;
+    line-height:1.9;
+    margin-top: 30px;
 }
