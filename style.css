@@ -1441,14 +1441,14 @@ height: 35px;
     display: block;
     align-items: left;
     gap: 10px;
-    width: 700px;    
+    width: 400px;    
 }
 
 .branding-footer img {
     height: 70px;
     width: auto;
-    vertical-align:;
 }
+
 .branding-footer a  {
     text-decoration: none;
     color:#68A65D;
@@ -1468,6 +1468,7 @@ height: 35px;
     font-size:0.9rem;
     line-height:1.9;
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 .contact-info {
     display: flex;
@@ -1485,4 +1486,100 @@ height: 35px;
     font-size: 0.9rem;
     margin: 5px 0;
     text-align: left;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+.footer-link-section h3{
+    color: #f1eeee;
+    margin-bottom: 15px;
+    font-family:sans-serif;
+    width: 150px;
+}
+.footer-link-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration-color: rgb(190, 209, 190);
+}
+.footer-link-section ul li {
+    margin-bottom: 10px;
+}
+.footer-link-section ul li a {
+    text-decoration: none;
+    color: #d1d1d1;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+.footer-link-section ul li a:hover {
+    color: chocolate;
+}
+.opening-hours-section {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    margin-left: 30px;
+}
+.opening-hours-section h3 {
+    color: #f1eeee;
+    margin-bottom: 15px;
+    font-family:sans-serif;
+    width:150px;
+}
+.opening-hours-section ul{
+    color: #ffffff;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-align: left;
+    text-decoration: none;
+}
+.opening-hours-section ul li {
+    margin-bottom: 8px;
+    gap:10px;
+}
+.newsletter-section {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    margin-left: 30px;
+    width: 250px;
+}
+.newsletter-section h3 {
+    color: #f1eeee;
+    margin-bottom: 15px;
+    font-family:sans-serif;
+    width: 200px;
+}
+.newsletter-section p {
+    color: #d1d1d1;
+    font-size: 0.7rem;
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-align: left;
+    text-decoration: none;
+    max-width:500px;
+}
+.newsletter-input {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.newsletter-form input  {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    flex: 1;
+}
+.newsletter-form span img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    vertical-align: middle;
+
 }
