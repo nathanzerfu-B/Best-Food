@@ -1261,6 +1261,112 @@ height: 35px;
     margin-bottom: 40px;
     line-height: 1.6;
 }
+
+.Main-blog-content {
+    /* Dimensions and Layout */
+    width: 100%;
+    max-width: 1200px;
+    /* Limits the width on large screens */
+    height: 500px;
+    /* Fixed height like the screenshot */
+    display: flex;
+    align-items: center;
+    /* Vertically centers the text */
+    padding: 60px;
+    /* Space inside the card */
+    margin-bottom: 50px;
+
+    /* Decoration */
+    border-radius: 20px;
+    overflow: hidden;
+
+    /* THE MAGIC PART: Gradient overlay + Image */
+    /* This creates a fade from 90% opacity black (left) to transparent (right) */
+    background: linear-gradient(to right, rgba(44, 43, 43, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%),
+        url('img/Preparacioin-y-produccioin-de-al.png');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Wrapper to keep text on the left side only */
+.blog-text-wrapper {
+    max-width: 550px;
+    /* Limits text width so it doesn't cover the food */
+    color: #fff;
+    text-align: left;
+    /* Ensures text aligns left */
+}
+
+/* Date Styling */
+.Main-blog-content .date {
+    display: block;
+    font-size: 0.9rem;
+    color: #ccc;
+    /* Light grey */
+    margin-bottom: 15px;
+    font-family: sans-serif;
+}
+
+/* Heading Styling */
+.Main-blog-content h3 {
+    font-family: 'Syne', sans-serif;
+    /* Using your font */
+    font-size: 2rem;
+    /* Larger title */
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Description Styling */
+.Main-blog-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    /* Off-white for readability */
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+/* Link Styling */
+.Main-blog-content .read-more {
+    color: #FF7A00;
+    /* Orange color from screenshot */
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap 0.3s ease;
+}
+
+.blog-text-wrapper  .arrow-icon  span {
+  color: #FF7A00;
+    /* Matches the text color */
+}
+
+.Main-blog-content .read-more:hover {
+    gap: 10px;
+    /* Moves the arrow slightly on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .Main-blog-content {
+        height: auto;
+        padding: 40px 20px;
+        /* Make gradient darker on mobile for readability */
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+            url('img/Preparacioin-y-produccioin-de-al.png');
+    }
+
+    .blog-text-wrapper {
+        max-width: 100%;
+    }
+}
+
 .Blog-articles {
     display: flex;
     gap: 30px;
@@ -1273,6 +1379,9 @@ height: 35px;
     overflow: hidden;
     transition: transform 0.3s;
 }
+
 .Blog-article:hover {
     transform: translateY(-10px);
 }
+
+
