@@ -1096,6 +1096,10 @@ height: 35px;
     align-items: start;
     flex-direction: column;
 }
+.Patrons-section{
+    overflow-x: hidden;
+    /* This crops any images sticking out the side */
+}
 .Patrons-section h2 {
     font-family: 'Syne', sans-serif;
     color: #0f2d11;
