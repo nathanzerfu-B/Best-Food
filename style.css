@@ -1436,18 +1436,18 @@ height: 35px;
 .footer-content p {
     color: #f6f2f2;
     max-width: 400px;
-    line-height: 1.6;
 }
 .branding-footer {
     display: block;
     align-items: left;
     gap: 10px;
-    width: 700px;
+    width: 700px;    
 }
 
 .branding-footer img {
     height: 70px;
     width: auto;
+    vertical-align:;
 }
 .branding-footer a  {
     text-decoration: none;
@@ -1468,4 +1468,21 @@ height: 35px;
     font-size:0.9rem;
     line-height:1.9;
     margin-top: 30px;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.contact-info span {
+    color: #f1eeee;
+    font-size: 0.9rem;
+    margin: 5px 0;
+    text-align: left;
 }
