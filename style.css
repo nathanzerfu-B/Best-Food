@@ -1244,9 +1244,10 @@ height: 35px;
     padding: 70px 80px;
     display: flex;
     justify-content:center;
-    align-items: center;
+    align-items:left;
     flex-direction: column;
 }
+
 .Blog-section h2 {
     font-family: 'Syne', sans-serif;
     color: #0f2d11;
@@ -1254,6 +1255,7 @@ height: 35px;
     margin-bottom: 20px;
     text-align: center;
 }
+
 .Blog-section p {
     color: #272222;
     max-width: 600px;
@@ -1265,7 +1267,7 @@ height: 35px;
 .Main-blog-content {
     /* Dimensions and Layout */
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     /* Limits the width on large screens */
     height: 500px;
     /* Fixed height like the screenshot */
@@ -1275,11 +1277,9 @@ height: 35px;
     padding: 60px;
     /* Space inside the card */
     margin-bottom: 50px;
-
     /* Decoration */
     border-radius: 20px;
     overflow: hidden;
-
     /* THE MAGIC PART: Gradient overlay + Image */
     /* This creates a fade from 90% opacity black (left) to transparent (right) */
     background: linear-gradient(to right, rgba(44, 43, 43, 0.9) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%),
@@ -1369,14 +1369,11 @@ height: 35px;
 
 .Blog-articles {
     display: flex;
-    gap: 30px;
+    gap: 110px;
 }
 .Blog-article {
-    background-color: #ffffff;
-    width: 300px;
+    width: 700px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: transform 0.3s;
 }
 
@@ -1384,4 +1381,33 @@ height: 35px;
     transform: translateY(-10px);
 }
 
+
+.Blog-article {
+    padding: 20px;
+}
+.Blog-article .date{
+    color:#555;
+    font-size: 0.9rem;
+}
+.Blog-article h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+.Blog-article p {
+    font-size:0.9rem;
+    line-height: 1.6;
+    color: #272222;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.Blog-article .read-more a{
+    color: #FF7A00;
+    font-weight: 600;
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap 0.3s ease;
+}
 
