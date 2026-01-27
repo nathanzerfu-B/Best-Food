@@ -1666,7 +1666,7 @@ height: 35px;
     height: 30px;
     padding: 8px;
     /* Space inside the circle */
-    border: 1px solid #f0eded;
+    border: 1px solid #444;
     /* Subtle ring like the photo */
     border-radius: 50%;
     /* Makes them circles */
