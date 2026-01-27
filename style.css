@@ -162,7 +162,7 @@ margin-top: 10px;
 
 .search-icon {
     width: 50px;
-    height: auto;
+    height: 50px;
     fill: white;
     cursor: pointer;
 
@@ -1540,78 +1540,106 @@ height: 35px;
     margin-bottom: 8px;
     gap:10px;
 }
+
+/* Layout fixes */
 .newsletter-section {
     display: flex;
-    flex-direction: column; 
-    gap: 15px;
-    margin-left: 30px;
-    width: 250px;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 350px;
+    /* Increased width to let text breathe */
 }
+
 .newsletter-section h3 {
     color: #f1eeee;
-    margin-bottom: 15px;
-    font-family:sans-serif;
-    width: 200px;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 1.2rem;
 }
+
 .newsletter-section p {
     color: #d1d1d1;
-    font-size: 0.7rem;
-    line-height: 1.5;
+    font-size: 0.85rem;
+    line-height: 1.6;
     font-family: sans-serif;
-    text-align: left;
-    text-decoration: none;
-    max-width:500px;
+    margin: 0;
 }
-.newsletter-input {
+
+/* --- THE INPUT GROUP STYLING --- */
+
+.newsletter-input-group {
+    background-color: #ffffff;
+    /* The white background container */
+    border-radius: 6px;
+    /* Rounded corners for the whole bar */
+    padding: 4px;
+    /* Creates the small white gap around the button */
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    /* Aligns input and button side-by-side */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    /* Ensures padding doesn't break width */
 }
-.newsletter-form input  {
-    padding: 10px;
-    border-radius: 5px;
+
+/* The Text Input Field */
+.newsletter-input-group input {
+    flex: 1;
+    /* Takes up all remaining space */
     border: none;
     outline: none;
+    background: transparent;
+    /* Important: Transparent so white wrapper shows */
+    padding: 10px 15px;
     font-size: 0.9rem;
-    flex: 1;
+    color: #555;
 }
-.newsletter-form span img {
-    width: 40px;
+
+/* Placeholder text color */
+.newsletter-input-group input::placeholder {
+    color: #aaa;
+}
+
+/* The Yellow Button */
+.newsletter-btn {
+    background-color: #FFB400;
+    /* The yellow/orange color from screenshot */
+    border: none;
+    border-radius: 4px;
+    /* Slightly smaller radius than container */
+    width: 45px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: transform 0.2s;
-    vertical-align: middle;
+    transition: background-color 0.3s;
 }
 
-.newsletter-form span img:hover {
-    transform: scale(1.1);
+.newsletter-btn:hover {
+    background-color: #e6a300;
 }
 
-.newsletter-form span img {
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: transform 0.2s;
-    vertical-align: middle;
-}
-
-.newsletter-form span img:hover {
-    transform: scale(1.1);
-}
-
+/* Social Media Icons (Your existing code refined) */
 .social-media-icons {
     display: flex;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 15px;
+    margin-top: 10px;
 }
+
 .social-media-icons img {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     cursor: pointer;
     transition: transform 0.2s;
+    object-fit: contain;
 }
-.social-media-icons img:hover {
-    transform: scale(1.2);
-    color: chocolate;
 
+.social-media-icons img:hover,
+.active-social {
+    background-color: #FFB400;
+    border-radius: 50%;
+    padding: 5px;
+    /* Adds space inside the circle */
 }
