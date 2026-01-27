@@ -1581,5 +1581,37 @@ height: 35px;
     cursor: pointer;
     transition: transform 0.2s;
     vertical-align: middle;
+}
+
+.newsletter-form span img:hover {
+    transform: scale(1.1);
+}
+
+.newsletter-form span img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    vertical-align: middle;
+}
+
+.newsletter-form span img:hover {
+    transform: scale(1.1);
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-media-icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.social-media-icons img:hover {
+    transform: scale(1.2);
+    color: chocolate;
 
 }
