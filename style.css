@@ -1308,7 +1308,6 @@ height: 35px;
     /* Larger title */
     line-height: 1.2;
     color: #ffffff;
-    margin-bottom: 20px;
 }
 
 /* Description Styling */
@@ -1358,6 +1357,7 @@ height: 35px;
     }
 }
 
+
 .Blog-articles {
     display: flex;
     gap: 110px;
@@ -1383,7 +1383,6 @@ height: 35px;
 .Blog-article h3 {
     font-family: 'Syne', sans-serif;
     font-size: 1.8rem;
-    margin: 10px 0;
 }
 .Blog-article p {
     font-size:0.9rem;
@@ -1420,226 +1419,293 @@ height: 35px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-
-.footer{
-    background-color: #161716;
-    width: 100%;
-    padding: 90px 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* --- 1. Main Footer Layout --- */
 .footer {
+    background-color: #161716;
+    /* Dark Background */
+    color: #fff;
+    width: 100%;
+    padding: 80px 80px 20px 80px;
+    /* Top/Sides padding, less at bottom */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container {
+    display: flex;
     justify-content: space-between;
+    /* Spreads columns evenly */
+    align-items: flex-start;
+    /* Aligns everything to the top */
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    gap: 40px;
+    margin-bottom: 60px;
+    /* Space before copyright bar */
 }
 
-.footer-content p {
-    color: #f6f2f2;
-    max-width: 400px;
-}
-.branding-footer {
-    display: block;
-    align-items: left;
-    gap: 10px;
-    width: 400px;    
+.footer-col {
+    flex: 1;
+    /* specific widths defined below */
+    min-width: 200px;
 }
 
-.branding-footer img {
-    height: 70px;
+.branding-col,
+.newsletter-col {
+    flex: 1.5;
+    /* Make these columns slightly wider */
+}
+
+/* Headings for all columns */
+.footer-col h3 {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+/* Description Text */
+.footer-desc {
+    color: #d1d1d1;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-family: sans-serif;
+}
+
+/* --- 2. Logo Design (Fixed) --- */
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.logo-icon {
+    height: 40px;
     width: auto;
 }
 
-.branding-footer a  {
-    text-decoration: none;
-    color:#68A65D;
-    font-weight: bold;
-    font-size: 1.9rem;
-}
-.branding-footer a span {
-    color: chocolate;
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4CAF50;
+    /* Green "Best" */
+    font-family: sans-serif;
 }
 
-.branding-footer a:hover {
-    text-decoration: underline;
+.logo-text span {
+    color: #FF7A00;
+    /* Orange "Food" */
 }
 
-.branding-footer p{
-    color: #ffffff;
-    font-size:0.9rem;
-    line-height:1.9;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-.contact-info {
+/* --- 3. Contact Info --- */
+.contact-item {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 12px;
 }
-.contact-info img {
+
+.contact-item img {
     width: 20px;
     height: 20px;
-    margin-right: 10px;
-    vertical-align: middle;
+    object-fit: contain;
+    /* Optional: Filter to make icons yellow/orange if needed, 
+       currently using your default images */
 }
-.contact-info span {
-    color: #f1eeee;
+
+.contact-item span {
+    color: #d1d1d1;
     font-size: 0.9rem;
-    margin: 5px 0;
-    text-align: left;
+    font-family: sans-serif;
 }
 
-
-.footer-links {
-    display: flex;
-    gap: 60px;
-}
-.footer-link-section h3{
-    color: #f1eeee;
-    margin-bottom: 15px;
-    font-family:sans-serif;
-    width: 150px;
-}
-.footer-link-section ul {
+/* --- 4. Quick Links (Green Dots) --- */
+.link-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-decoration-color: rgb(190, 209, 190);
 }
-.footer-link-section ul li {
-    margin-bottom: 10px;
+
+.link-list li {
+    position: relative;
+    padding-left: 20px;
+    /* Space for dot */
+    margin-bottom: 12px;
 }
-.footer-link-section ul li a {
+
+/* The Green Dot */
+.link-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    /* Center dot vertically relative to text */
+    width: 6px;
+    height: 6px;
+    background-color: #00d26a;
+    /* Bright Green */
+    border-radius: 50%;
+}
+
+.link-list a {
     text-decoration: none;
     color: #d1d1d1;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
-.footer-link-section ul li a:hover {
-    color: chocolate;
-}
-.opening-hours-section {
-    display: flex;
-    flex-direction: column; 
-    gap: 15px;
-    margin-left: 30px;
-}
-.opening-hours-section h3 {
-    color: #f1eeee;
-    margin-bottom: 15px;
-    font-family:sans-serif;
-    width:150px;
-}
-.opening-hours-section ul{
-    color: #ffffff;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    text-align: left;
-    text-decoration: none;
-}
-.opening-hours-section ul li {
-    margin-bottom: 8px;
-    gap:10px;
-}
-
-/* Layout fixes */
-.newsletter-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    max-width: 350px;
-    /* Increased width to let text breathe */
-}
-
-.newsletter-section h3 {
-    color: #f1eeee;
-    margin: 0;
+    font-size: 0.95rem;
+    transition: 0.3s;
     font-family: sans-serif;
-    font-size: 1.2rem;
 }
 
-.newsletter-section p {
-    color: #d1d1d1;
-    font-size: 0.85rem;
-    line-height: 1.6;
-    font-family: sans-serif;
+.link-list a:hover {
+    color: #FF7A00;
+}
+
+/* --- 5. Opening Hours (Fixed) --- */
+.opening-hours ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-/* --- THE INPUT GROUP STYLING --- */
+.opening-hours li {
+    font-size: 1rem;
+    color: #fff;
+    /* Day is White */
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
 
+.opening-hours .time {
+    display: block;
+    /* Puts time on new line */
+    color: #999;
+    /* Time is Grey */
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+/* --- 6. Newsletter Input --- */
+/* The container (The white bar) */
 .newsletter-input-group {
     background-color: #ffffff;
-    /* The white background container */
-    border-radius: 6px;
-    /* Rounded corners for the whole bar */
-    padding: 4px;
-    /* Creates the small white gap around the button */
+    /* White background */
     display: flex;
-    /* Aligns input and button side-by-side */
+    /* Puts input and button side-by-side */
     align-items: center;
+    /* Centers them vertically */
+    padding: 5px;
+    /* This creates the white border around the orange button */
+    border-radius: 5px;
+    /* Matches the screenshot's slight curve */
     width: 100%;
+    max-width: 350px;
+    /* Adjust based on your footer column width */
+    height: 55px;
+    /* Total height of the bar */
     box-sizing: border-box;
-    /* Ensures padding doesn't break width */
 }
 
-/* The Text Input Field */
+/* The actual text field */
 .newsletter-input-group input {
     flex: 1;
-    /* Takes up all remaining space */
-    border: none;
-    outline: none;
+    /* Takes up all available space on the left */
     background: transparent;
-    /* Important: Transparent so white wrapper shows */
-    padding: 10px 15px;
-    font-size: 0.9rem;
-    color: #555;
+    /* Let the container's white show through */
+    border: none;
+    /* Remove default borders */
+    outline: none;
+    /* Remove blue focus ring */
+    padding:  10px;
+    /* Space for the text */
+    font-size: 0.95rem;
+    color: #333;
+    /* Dark text for typing */
 }
 
-/* Placeholder text color */
+/* Style the placeholder text */
 .newsletter-input-group input::placeholder {
-    color: #aaa;
+    color: #bbb;
+    /* Light grey like the photo */
 }
 
-/* The Yellow Button */
+/* The Orange Button (Paper Plane) */
 .newsletter-btn {
     background-color: #FFB400;
-    /* The yellow/orange color from screenshot */
+    /* The specific golden-orange from the photo */
     border: none;
+    height: 100%;
+    /* Fills the height of the white bar minus padding */
+    aspect-ratio: 1 / 1;
+    /* Keeps it a perfect square */
     border-radius: 4px;
-    /* Slightly smaller radius than container */
-    width: 45px;
-    height: 40px;
+    /* Slightly rounded corners */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background 0.2s ease;
 }
 
 .newsletter-btn:hover {
     background-color: #e6a300;
+    /* Darker orange on hover */
 }
 
-/* Social Media Icons (Your existing code refined) */
+/* Social Media Icons (Circles below the form) */
 .social-media-icons {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 12px;
+    margin-top: 20px;
 }
 
 .social-media-icons img {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    /* Space inside the circle */
+    border: 1px solid #444;
+    /* Subtle ring like the photo */
+    border-radius: 50%;
+    /* Makes them circles */
+    transition: all 0.3s ease;
     cursor: pointer;
-    transition: transform 0.2s;
-    object-fit: contain;
 }
 
-.social-media-icons img:hover,
-.active-social {
+/* The Facebook/Active Icon from the photo */
+.social-media-icons img.active-social,
+.social-media-icons img:hover {
     background-color: #FFB400;
-    border-radius: 50%;
-    padding: 5px;
-    /* Adds space inside the circle */
+    /* Orange fill */
+    border-color: #FFB400;
+    /* Orange border */
+}
+
+/* --- 7. Copyright Bar --- */
+.copyright-bar {
+    width: 100%;
+    border-top: 1px solid #333;
+    /* Thin grey line */
+    padding-top: 30px;
+    text-align: center;
+}
+
+.copyright-bar p {
+    color: #777;
+    font-size: 0.85rem;
+    font-family: sans-serif;
+}
+
+/* Responsive adjustment */
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .footer {
+        padding: 50px 30px;
+    }
 }
