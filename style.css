@@ -213,7 +213,11 @@ margin-top: 10px;
 margin-bottom: 200px;
 }
 
-
+.hero-core {
+    display:flex;
+    align-items: start;
+    max-width: 1600px;
+}
 
 h1 {
 
@@ -223,11 +227,39 @@ h1 {
     font-size: 3.5rem;
     text-align: center;
     margin-bottom: 20px;
-    max-width: 900px;
+    max-width: 1000px;
 
 }
 
+.hero-rating-section{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.rater-imgs{
+    display: flex;
+    gap: -30px;
+    margin-left:10px;
+} 
 
+
+.rater-imgs img{
+    width: 55px;
+    height: 60px;
+    border-radius: 50%;
+    border:2px solid #fff;
+}
+.hero-rating-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-rating-text{
+    color: #f1eeee;
+    font-size: 1rem;
+font-family: sans-serif;
+}
 
 .hero-description {
     font-family: 'Syne', sans-serif;
