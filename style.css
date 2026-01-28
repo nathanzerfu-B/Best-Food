@@ -79,6 +79,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-left: 30px;
 }
 
 .nav-logo-img {
@@ -104,7 +105,7 @@ nav a.logo {
 
 a.logo span {
 
-    color: chocolate;
+    color:#EB7012;
 
 }
 
@@ -132,7 +133,12 @@ nav li a {
 }
 
 
+nav li a.active {
+    color: chocolate;
+    font-weight: bold;
+    border-bottom: chocolate 2px solid;
 
+}
 nav li a:hover {
     color: chocolate;
     text-decoration: underline;
@@ -163,8 +169,8 @@ margin-top: 10px;
 
 
 .search-icon {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     fill: white;
     cursor: pointer;
 
@@ -1540,7 +1546,7 @@ height: 35px;
 }
 
 .logo-text span {
-    color: #FF7A00;
+    color: #EB7012;
     /* Orange "Food" */
 }
 
