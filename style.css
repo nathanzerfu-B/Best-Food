@@ -44,7 +44,7 @@ body {
     background-position: center;
 
     background-repeat: no-repeat;
-    height:160vh;
+    height:140vh;
 
 
 }
@@ -264,12 +264,12 @@ font-family: sans-serif;
 }
 
 .hero-description {
-    font-family: 'Syne', sans-serif;
+    font-family:  sans-serif;
     color: #d1d1d1;
     font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 40px;
-    max-width: 400px;
+    max-width: 480px;
     align-self: flex-start;
     text-align: left;
 
@@ -280,6 +280,7 @@ font-family: sans-serif;
 /* Action Area Row (Plate + Buttons) */
 
 .action-area {
+    margin-top: -120px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -289,7 +290,7 @@ font-family: sans-serif;
 }
 
 .plate {
-    width: 500px;
+    width: 450px;
     height: auto;
     border-radius: 50%;
     border: none;
@@ -350,9 +351,11 @@ font-family: sans-serif;
 
 .video-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap:20px;
     align-items: center;
     margin-left: 10px;
+    
 }
 
 .video-btn {
@@ -362,6 +365,14 @@ font-family: sans-serif;
     padding: 0;
 }
 
+.video-btn img {
+    transition: transform 0.3s;
+    border-top:#00d26a 5px solid;
+    border-left: rgb(90, 190, 36) 5px solid;
+    border-right: #000000 5px solid;
+    border-bottom: #000000 5px solid;
+    border-radius: 50%;
+}
 
 .video-text {
     margin: 0 !important;
@@ -378,7 +389,7 @@ font-family: sans-serif;
    align-items: center;
    justify-content: center;
    padding: 60px 50px;
-margin-top: -31vh;
+margin-top: -21vh;
     background-color:#F2F7FB;
     gap: 30px;
 }
