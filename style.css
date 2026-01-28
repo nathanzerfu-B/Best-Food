@@ -466,7 +466,7 @@ transition: transform 0.3s, background-color 0.3s;
     background-color: chocolate;
     color: white;
     padding: 15px 35px;
-    border-radius: 50px;
+    border-radius:50px;
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -1412,7 +1412,7 @@ height: 35px;
     margin: 0;
 }
 .instagram-photos img {
-    width: 350px;
+    width: 252.9px;
     height: 180px;
     transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
