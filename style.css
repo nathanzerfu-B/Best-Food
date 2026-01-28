@@ -151,20 +151,13 @@ nav li a:hover {
 
 .search-btn {
     display: flex;
-    align-items: right;
-    gap: 5px;
-margin-top: 10px;
+    gap: 15px;
+    margin-top: 10px;
+margin-right:60px;
 }
 
 
 
-.search-btn input {
-    border-radius: 30px;
-    padding: 5px 10px;
-    border: none;
-    outline: none;
-
-}
 
 
 
@@ -182,7 +175,7 @@ margin-top: 10px;
     border-radius: 30px;
     background-color: chocolate;
     color: white;
-    padding: 8px 10px;
+    padding: 5px 20px;
     cursor: pointer;
     border: none;
     display: flex;
